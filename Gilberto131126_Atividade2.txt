@@ -1,0 +1,16 @@
+Aluno: Gilberto Morais Coutinho
+Data: 13/11/2026
+Atividade 2 - Gerenciamento de Configuracao e Versionamento de Software
+
+Tema: A importancia do commit na entrega de arquivos pelo Git e GitHub.
+
+O Git permite acompanhar as alteracoes realizadas nos arquivos de um projeto.
+O comando git add prepara os arquivos para o registro.
+O comando git commit registra as alteracoes no historico local do repositorio.
+O comando git push envia os commits para o repositorio remoto no GitHub.
+
+O commit e importante porque identifica uma etapa do desenvolvimento,
+facilita o acompanhamento das modificacoes e permite consultar o historico.
+
+Nesta atividade, praticamos o versionamento e a entrega de arquivos
+no repositorio compartilhado pelo professor.
