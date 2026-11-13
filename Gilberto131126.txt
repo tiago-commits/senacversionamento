@@ -1,0 +1,4 @@
+Este arquivo foi criado por Gilberto Morais Coutinho.
+Atividade da aula de Gerenciamento de Configuracao e Versionamento de Software.
+Data: 13/11/2026.
+Arquivo atualizado utilizando Git Bash para pratica de versionamento com Git e GitHub.
