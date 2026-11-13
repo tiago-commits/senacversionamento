@@ -1,1 +1,4 @@
 ESSE ARQUIVO FOI CRIADO PELO AUTOR DAVID SILVEIRA
+
+13112026 : o texto que foi adicionado na data de hoje é essa frase
+autor : David Silveira.
