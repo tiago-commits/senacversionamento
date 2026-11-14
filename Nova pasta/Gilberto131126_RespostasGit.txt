@@ -1,0 +1,11 @@
+1 - Qual a diferença entre Git e GitHub?
+Git é uma ferramenta que controla as versões dos arquivos e registra as alterações feitas em um projeto. GitHub é uma plataforma na internet onde podemos armazenar os repositórios Git, compartilhar projetos e trabalhar em equipe.
+
+2 - Para que serve o comando git add .?
+Serve para preparar as alterações dos arquivos da pasta atual e de suas subpastas para o próximo commit.
+
+3 - Para que serve o comando git commit?
+Serve para registrar as alterações preparadas no histórico do projeto, com uma mensagem explicando o que foi feito.
+
+4 - Para que serve o comando git push?
+Serve para enviar os commits do repositório local para um repositório remoto, como o GitHub.
