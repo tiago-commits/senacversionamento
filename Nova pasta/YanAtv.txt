@@ -1,0 +1,17 @@
+1 - explique com suas palavras 
+qual a diferença do git para GitHub ?
+
+R:o Git seria utilizado para o salvamento de arquivos dos indivíduos, que guarda as versões, edições etc. Já o
+GitHub é utilizado mais como uma rede social para devs onde compartilham seus projetos/salvam.
+
+2- para que serve o comando git add . 
+
+R: serve para o visual code enter o que deve ser mandado no próximo commit.
+
+3 - para que serve o comando git commit
+
+R: cria um checkpoint nas alterações dos documentos que foram editados.
+
+4 - para que serve o comando git push
+
+R: serve para enviar ao GitHub.
