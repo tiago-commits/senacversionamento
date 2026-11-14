@@ -1,0 +1,16 @@
+1 - explique com suas palavras qual a diferença do git para GitHub ?
+
+Git = sistema de controle (branch) local de arquivos. software
+GitHub = compartilhamento online de arquivos e projetos em nuvem. site
+
+2- para que serve o comando git add 
+
+prepara o arquivo pro repositório.
+
+3 - para que serve o comando git commit
+
+salva as alterações definitivamente no repositório local
+
+4 - para que serve o comando git push
+
+envia os commits locais pro repositório (repo) online
