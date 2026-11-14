@@ -1,0 +1,17 @@
+1 - explique com suas palavras
+
+qual a diferença do git para GitHub ?
+
+O Git serve para salvar arquivos na máquina local, enquanto o GitHub serve para salvar arquivos na nuvem, além de ser um lugar para se compartilhar códigos com outros programadores.
+
+2- para que serve o comando git add .
+
+Ele é feito para preparar alterações em arquivos para depois passarem pelo commit.
+
+3 - para que serve o comando git commit
+
+O commit serve para salvar a alteração para que ela possa ser vista depois, também pode nomeá-la.
+
+4 - para que serve o comando git push
+
+O git push serve como o comando que executa e manda as alterações e o arquivo para o GitHub
