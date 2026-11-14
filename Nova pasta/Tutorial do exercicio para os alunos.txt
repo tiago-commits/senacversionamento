@@ -1,0 +1,17 @@
+passos para responder o exercícios do professor 
+
+apagar a pasta do seu computador senacversionamento
+
+no gitbash 
+clonar o respositorio do git do professor senacversionamento
+
+abrir a pasta nova pasta pelo explorer
+
+abrir e responder o arquivo que tem dentro
+
+salvar com o nome de voces+ data de hoje ex: respostatiago131126.txt
+
+enviar de volta esse arquivo para o git do professor 
+
+e confirmar se aparece no respositorio
+dentro de nova pasta (o arquivo com o nome de voces) 
