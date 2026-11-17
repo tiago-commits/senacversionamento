@@ -1,0 +1,52 @@
+QUESTIONÁRIO DE REVISÃO — UC10
+
+Gerenciamento de Configuração e Versionamento de Softwares
+
+Aluno: Gilberto Morais Coutinho
+Data: 17/11/2026
+
+1. Diferença entre reset e revert
+
+O git reset permite retornar a branch para um commit anterior, alterando o histórico da branch. Já o git revert cria um novo commit que desfaz as alterações de um commit anterior, preservando o histórico. O revert é mais indicado para projetos compartilhados.
+
+2. Significado de HEAD~1
+
+HEAD~1 representa o commit anterior ao commit atual. O comando git reset HEAD~1 retorna a branch para esse commit, mantendo, por padrão, as alterações nos arquivos locais, fora da área de preparação.
+
+3. Uso do --amend
+
+O comando git commit --amend permite modificar o último commit. Pode ser utilizado para corrigir a mensagem de um commit ou incluir um arquivo que esquecemos de adicionar. Deve ser utilizado com cuidado quando o commit já foi compartilhado.
+
+4. Estrutura do Gitflow
+
+O Gitflow é um modelo de organização de branches que facilita o desenvolvimento em equipe.
+
+- Main: armazena as versões estáveis do sistema.
+- Develop: reúne as funcionalidades em desenvolvimento.
+- Feature: utilizada para desenvolver novas funcionalidades.
+- Release: utilizada para preparar e testar novas versões.
+- Hotfix: utilizada para corrigir problemas urgentes em produção.
+
+5. Vantagens do Gitflow no ciclo de vida
+
+O Gitflow permite que cada desenvolvedor trabalhe em uma funcionalidade separada, sem interferir diretamente no trabalho dos colegas. A realização de testes e revisões antes da fusão das branches ajuda a reduzir conflitos e erros.
+
+6. Funcionamento do Trunk-Based Development
+
+É um modelo em que os desenvolvedores trabalham na branch principal ou em branches de curta duração. Seu objetivo é integrar pequenas alterações frequentemente, reduzindo conflitos e facilitando a integração contínua.
+
+7. Boas práticas no Trunk-Based Development
+
+Realizar commits pequenos e frequentes, manter o repositório local atualizado, executar testes automatizados, revisar o código e manter uma boa comunicação entre os integrantes da equipe.
+
+8. Problemas do armazenamento centralizado sem versionamento
+
+Os principais problemas eram a sobrescrita das alterações realizadas por outros usuários e o bloqueio de arquivos, que dificultava o trabalho simultâneo. Além disso, sem um histórico de versões, era difícil recuperar informações perdidas.
+
+9. Sistemas centralizados vs. distribuídos
+
+Nos sistemas centralizados, uma falha no servidor poderia impedir o trabalho da equipe e causar a perda do histórico caso não houvesse backup. No Git, cada clone completo possui uma cópia do repositório e do histórico, permitindo trabalhar localmente e recuperar informações.
+
+10. Popularidade do Git e papel do GitHub
+
+O GitHub facilita o armazenamento remoto de repositórios Git e a colaboração entre desenvolvedores. Oferece recursos como pull requests, issues e revisão de código, além de incentivar o compartilhamento de projetos de código aberto e a troca de conhecimentos entre desenvolvedores.
