@@ -1,0 +1,69 @@
+Questionário de Revisão — UC10: Gerenciamento de Configuração e Versionamento de Softwares
+
+1. Diferença entre reset e revert: Explique a diferença fundamental entre o funcionamento dos comandos git reset e git revert ao desfazer alterações em um projeto, detalhando o que ocorre com o histórico de commits em cada caso.
+
+git revert = desfaz as alterações com um commit com o efeito inverso ao commit antigo. histórico original permanece
+git reset = volta o projeto para um commit anterior e apaga os commits antigos do histórico. uso local, antes de enviar o código para o repositório remoto
+
+
+2. Significado de HEAD~1: No contexto do comando git reset HEAD~1, o que a expressão HEAD~1 representa e qual é o resultado prático dessa operação na branch atual?
+
+HEAD = commit atual
+~1 = volta 1 commit
+desfaz o último commit e apaga do histórico, mas deixa o código salvo no arquivo
+
+
+3. Uso do --amend: Em quais situações um desenvolvedor deve utilizar a opção --amend no comando git commit? Cite pelo menos dois exemplos de modificações que podem ser feitas com esse recurso.
+
+o git commit --amend serve quando acabou de fazer um commit e quer corrigir ele sem criar um novo commit sujando o histórico. ele pega o último commit, abre de novo, colocando as mudanças novas lá dentro e substitui pelo commit corrigido.
+
+ex 1 mudar a mensagem do commit: quando colocar a mensagem errada e quer corrigir o texto (git commit --amend -m "msg certa").
+ex 2 incluir arquivos: deu git commit, esqueceu de adicionar algo. dá um git add arquivo esquecido, roda git commit --amend --no-edit pra colocar esse arquivo no commit.
+
+
+4. Estrutura do Gitflow: Descreva o objetivo do modelo de colaboração Gitflow e explique a função de cada uma de suas cinco branches principais (Main, Develop, Feature, Release e Hotfix).
+
+serve pra organizar o trabalho em equipe e separar o código já no ar, do código que ainda está sendo feito. facilita na hora de lançar novidades ou corrigir bugs.
+
+ main (produção): o código oficial que o usuário final está usando no ar
+ develop (desenvolvimento): onde a equipe junta coisas novas que estão sendo feitas. rascunho da próxima versão.
+ feature (funcionalidades): criada a partir da Develop pra fazer uma tarefa específica (ex: tela de login). quando termina, volta pra Develop.
+ release (lançamento): criada quando a Develop já tem o  suficiente pra ir para o ar. serve pra testar e ajustar detalhes antes de colocar na Main
+ hotfix (correção): criada direto da main quando tem um bug crítico no sistema. arruma e coloca de volta tanto na main quanto na develop
+
+
+5. Vantagens do Gitflow no ciclo de vida: De que maneira a criação e a fusão de ramificações no modelo Gitflow ajudam a evitar conflitos durante o desenvolvimento de um software?
+
+ o Gitflow evita conflitos porque separa o trabalho da equipe e cria partes organizadas para juntar o código.
+
+
+6. Funcionamento do Trunk-Based Development: Como funciona o modelo Trunk-Based Development e qual é a principal justificativa para adotá-lo em um projeto?
+
+é um modelo onde todos trabalham direto na branch principal (main ou trunk) ou cria branches curtas que duram 1 ou 2 dias antes de voltar para a principal
+ao invés de várias branches gigantes (como no Gitflow) são feitas alterações pequenas e juntam tudo na main. usam Feature Flags
+
+principal justificativa: entregar o código mais rápido e acabar com o problema de merge. é ótimo pra quem usa entrega contínua (CI/CD)
+
+
+7. Boas práticas no Trunk-Based Development: Como todas as alterações no Trunk-Based Development são feitas diretamente na branch principal, quais práticas são consideradas fundamentais para evitar conflitos no projeto?
+
+commits minúsculos e constantes: sobe código aos poucos várias vezes ao dia para evitar conflitos grandes
+testes automáticos (CI): bots testam o código a cada envio
+feature Flags: esconde funções inacabadas por "chave" para o usuário não ver coisa pela metade
+revisão rápida: se criar branch, ela tem que ser revisada e juntada no mesmo dia
+	
+
+8. Problemas do armazenamento centralizado sem versionamento: Antes do surgimento das ferramentas de controle de versão, múltiplos usuários acessavam um mesmo arquivo em um servidor central. Quais eram os dois principais problemas que ocorriam quando duas ou mais pessoas tentavam editar esse arquivo simultaneamente?
+
+perda de trabalho: quem salvasse o arquivo por último apagava as alterações de quem salvou antes, sem perceber
+travamento: pra evitar que um apagasse o trabalho do outro, o servidor travava o arquivo para edição enquanto alguém estivesse com ele aberto, deixando o resto da equipe parada esperando
+
+9. Sistemas centralizados vs. distribuídos: Qual era a principal vulnerabilidade das ferramentas antigas de controle de versão centralizado (como CVS e Subversion) em caso de falha no servidor, e como os Sistemas de Gerenciamento de Versões Distribuídos (SGVD), como o Git, resolvem esse problema?
+
+principal vulnerabilidade dos sistemas centralizados (ex: CVS e Subversion) em que todo o histórico do projeto era guardado só no servidor central e se o disco desse servidor parasse de funcionar e não houvesse backup, o histórico inteiro era perdido para sempre e ninguém conseguia salvar commits enquanto ele estivesse fora do ar
+O Git resolve  porque cada dev baixa uma cópia completa do repositório inteiro (incluindo o histórico) para o seu próprio computador (local).
+
+
+10. Popularidade do Git e papel do GitHub: Além de ser um sistema distribuído e performático, qual é o papel da plataforma GitHub na ampla adoção do Git pela comunidade de desenvolvimento e pelo ecossistema open-source?
+
+o GitHub popularizou o Git pois transformou a ferramenta do terminal em plataforma web colaborativa. ele impulsionou o open-source já que facilita a colaboração global com Forks e Pull Requests. também é gratuito e serve de portfólio dos programadores/devs
