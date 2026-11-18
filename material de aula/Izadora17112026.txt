@@ -1,0 +1,51 @@
+Responder as questões
+salvar o arquivo com Nome+datadehoje.txt
+enviar para o Git do professor colocando o arquivo dentro da pasta material de aula
+
+
+
+Questionário de Revisão — UC10: Gerenciamento de Configuração e Versionamento de Softwares
+
+1. Diferença entre reset e revert: Explique a diferença fundamental entre o funcionamento dos comandos git reset e git revert ao desfazer alterações em um projeto, detalhando o que ocorre com o histórico de commits em cada caso.
+R:O git reset volta o histórico da branch para um commit anterior, podendo remover commits posteriores do histórico. Já o git revert cria um novo commit que desfaz as alterações de outro commit, mantendo o histórico original.
+
+
+2. Significado de HEAD~1: No contexto do comando git reset HEAD~1, o que a expressão HEAD~1 representa e qual é o resultado prático dessa operação na branch atual?
+R:HEAD~1 representa o commit imediatamente anterior ao commit atual. Ao executar git reset HEAD~1, a branch volta uma posição no histórico, desfazendo o último commit.
+
+
+3. Uso do --amend: Em quais situações um desenvolvedor deve utilizar a opção --amend no comando git commit? Cite pelo menos dois exemplos de modificações que podem ser feitas com esse recurso.
+R:A opção --amend é utilizada para corrigir ou modificar o último commit, sem precisar criar outro. Pode ser usada, por exemplo, para corrigir a mensagem do commit ou adicionar arquivos que foram esquecidos.
+
+
+4. Estrutura do Gitflow: Descreva o objetivo do modelo de colaboração Gitflow e explique a função de cada uma de suas cinco branches principais (Main, Develop, Feature, Release e Hotfix).
+R:O Gitflow é um modelo de organização do desenvolvimento que utiliza diferentes branches para separar tarefas e facilitar o trabalho em equipe.
+- Main: armazena as versões estáveis do projeto.
+- Develop: reúne as alterações que estão sendo desenvolvidas.
+- Feature: utilizada para desenvolver novas funcionalidades.
+- Release: prepara uma versão para publicação.
+- Hotfix: corrige problemas urgentes na versão já publicada.
+
+
+5. Vantagens do Gitflow no ciclo de vida: De que maneira a criação e a fusão de ramificações no modelo Gitflow ajudam a evitar conflitos durante o desenvolvimento de um software?
+R:O Gitflow permite que diferentes desenvolvedores trabalhem em funcionalidades separadas, sem interferir diretamente no código principal. Isso facilita a organização, os testes e a integração das alterações, reduzindo conflitos.
+
+
+6. Funcionamento do Trunk-Based Development: Como funciona o modelo Trunk-Based Development e qual é a principal justificativa para adotá-lo em um projeto?
+R:É um modelo de desenvolvimento em que os desenvolvedores integram suas alterações frequentemente em uma única branch principal, chamada trunk. Seu principal objetivo é facilitar a integração do código e evitar branches de longa duração.				
+
+
+7. Boas práticas no Trunk-Based Development: Como todas as alterações no Trunk-Based Development são feitas diretamente na branch principal, quais práticas são consideradas fundamentais para evitar conflitos no projeto?
+R:É importante realizar commits pequenos e frequentes, integrar as alterações constantemente, utilizar testes automatizados e revisar o código. Essas práticas ajudam a identificar problemas rapidamente e evitar conflitos.
+
+
+8. Problemas do armazenamento centralizado sem versionamento: Antes do surgimento das ferramentas de controle de versão, múltiplos usuários acessavam um mesmo arquivo em um servidor central. Quais eram os dois principais problemas que ocorriam quando duas ou mais pessoas tentavam editar esse arquivo simultaneamente?
+R:Os dois principais problemas eram a sobrescrita das alterações de outros usuários e a perda de informações quando duas pessoas editavam o mesmo arquivo simultaneamente, causando conflitos e perda de trabalho.
+
+
+9. Sistemas centralizados vs. distribuídos: Qual era a principal vulnerabilidade das ferramentas antigas de controle de versão centralizado (como CVS e Subversion) em caso de falha no servidor, e como os Sistemas de Gerenciamento de Versões Distribuídos (SGVD), como o Git, resolvem esse problema?
+R:Nos sistemas centralizados, uma falha no servidor poderia impedir o acesso ao histórico e causar a perda das versões armazenadas. Já nos sistemas distribuídos, como o Git, cada usuário possui uma cópia completa do repositório, incluindo seu histórico, oferecendo maior segurança.
+
+
+10. Popularidade do Git e papel do GitHub: Além de ser um sistema distribuído e performático, qual é o papel da plataforma GitHub na ampla adoção do Git pela comunidade de desenvolvimento e pelo ecossistema open-source?
+R:O GitHub ajudou a popularizar o Git ao oferecer uma plataforma online para hospedar repositórios, compartilhar projetos e colaborar com outros desenvolvedores. Também facilitou o desenvolvimento de projetos open-source por meio de recursos como Pull Requests e Issues.
