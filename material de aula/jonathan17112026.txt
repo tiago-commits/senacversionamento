@@ -1,0 +1,55 @@
+Questionário de Revisão — UC10: Gerenciamento de Configuração e Versionamento de Softwares
+
+1. Diferença entre reset e revert: Explique a diferença fundamental entre o funcionamento dos comandos git reset e git revert ao desfazer alterações em um projeto, detalhando o que ocorre com o histórico de commits em cada caso.
+
+Resposta: O reset volta para um commit antigo e apaga os commits que vieram depois. O revert cria um novo commit que desfaz a alteração, sem apagar nada do histórico.
+
+
+2. Significado de HEAD~1: No contexto do comando git reset HEAD~1, o que a expressão HEAD~1 representa e qual é o resultado prático dessa operação na branch atual?
+
+Resposta: HEAD~1 é o commit anterior ao atual. O comando faz a branch voltar um commit, desfazendo o último.
+
+
+3. Uso do --amend: Em quais situações um desenvolvedor deve utilizar a opção --amend no comando git commit? Cite pelo menos dois exemplos de modificações que podem ser feitas com esse recurso.
+
+Resposta: Quando quer corrigir o último commit sem criar outro. Exemplos: mudar a mensagem do commit e adicionar um arquivo que foi esquecido.
+
+
+4. Estrutura do Gitflow: Descreva o objetivo do modelo de colaboração Gitflow e explique a função de cada uma de suas cinco branches principais (Main, Develop, Feature, Release e Hotfix).
+
+Resposta: O Gitflow organiza o trabalho em equipe, separando o que está em desenvolvimento do que está pronto.
+- Main: versão estável, em produção.
+- Develop: desenvolvimento em andamento.
+- Feature: nova funcionalidade.
+- Release: preparação para lançar uma versão.
+- Hotfix: correção urgente de bug em produção.
+
+
+5. Vantagens do Gitflow no ciclo de vida: De que maneira a criação e a fusão de ramificações no modelo Gitflow ajudam a evitar conflitos durante o desenvolvimento de um software?
+
+Resposta: Cada pessoa trabalha em sua própria branch, sem mexer no código dos outros. O merge só é feito quando está pronto, o que evita conflitos.
+
+
+6. Funcionamento do Trunk-Based Development: Como funciona o modelo Trunk-Based Development e qual é a principal justificativa para adotá-lo em um projeto?
+
+Resposta: Todos trabalham em uma única branch principal, com commits pequenos e frequentes. A justificativa é integrar o código o tempo todo e evitar grandes conflitos no final.
+
+
+7. Boas práticas no Trunk-Based Development: Como todas as alterações no Trunk-Based Development são feitas diretamente na branch principal, quais práticas são consideradas fundamentais para evitar conflitos no projeto?
+
+Resposta: Commits pequenos e frequentes, atualizar o código sempre (git pull) e ter testes automáticos.
+
+
+8. Problemas do armazenamento centralizado sem versionamento: Antes do surgimento das ferramentas de controle de versão, múltiplos usuários acessavam um mesmo arquivo em um servidor central. Quais eram os dois principais problemas que ocorriam quando duas ou mais pessoas tentavam editar esse arquivo simultaneamente?
+
+Resposta: 1) Quem salvava por último apagava as alterações do outro. 2) Não havia histórico, então não dava para saber quem mudou o quê nem voltar atrás.
+
+
+9. Sistemas centralizados vs. distribuídos: Qual era a principal vulnerabilidade das ferramentas antigas de controle de versão centralizado (como CVS e Subversion) em caso de falha no servidor, e como os Sistemas de Gerenciamento de Versões Distribuídos (SGVD), como o Git, resolvem esse problema?
+
+Resposta: Se o servidor falhasse, ninguém trabalhava e o histórico podia ser perdido. No Git, cada pessoa tem uma cópia completa do projeto, então qualquer cópia pode restaurar o servidor.
+
+
+10. Popularidade do Git e papel do GitHub: Além de ser um sistema distribuído e performático, qual é o papel da plataforma GitHub na ampla adoção do Git pela comunidade de desenvolvimento e pelo ecossistema open-source?
+
+Resposta: O GitHub guarda os repositórios na nuvem e facilita o trabalho em grupo, com pull requests e revisão de código. Também ajuda a divulgar e a contribuir com projetos open-source.
