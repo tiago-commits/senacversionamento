@@ -4,7 +4,7 @@
 3 - Marcio da Silva Louzada - Matricula 182610037
 2 - Natan Mikael Dos Santos Espindola - 182610052
 1 - Pedro Araújo Guedes - 05872444028@senacrs.edu.br
-=======
+
 
 
 1 - Pedro Araújo Guedes - 05872444028@senacrs.edu.br
@@ -36,4 +36,4 @@ Marcio da Silva Louzada - Matricula 182610037
 4 - david silveira - 182610002
 5 - Marcio da Silva Louzada - Matricula 182610037
 
->>>>>>> e10d74fbd6974c9aa383639e2a20075641812d86
+6 - Ygor Pereira Braga - 05557580018@senacrs.edu.br
