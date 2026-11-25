@@ -1,1 +1,1 @@
-1 - nome completo - matricula do aluno senac
+1 - Pedro Araújo Guedes - 05872444028@senacrs.edu.br
