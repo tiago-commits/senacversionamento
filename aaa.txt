@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 teste1
 
 
@@ -7,3 +8,10 @@ jxhjxjxjxjxjxjxjxjxjxjxjxjxjxjxjxjxjxjxjxjx
 
 
 kxjxjhnxjxjxjx
+=======
+<<<<<<< HEAD
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX+++++++++
+=======
+Olha, uma informação...
+>>>>>>> 92c2ac1ff42e19914d25d427127984eb55a1b162
+>>>>>>> origin
