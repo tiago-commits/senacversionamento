@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 1 - Yan Speggiorin Pagnossin Alves - 000040443
 4 - david silveira - 182610002
 3 - Marcio da Silva Louzada - Matricula 182610037
@@ -54,12 +52,6 @@ Marcio da Silva Louzada - Matricula 182610037
 10. Ygor Pereira Braga - 05557580018@senacrs.edu.br
 11. Enzo - 86257218004@senacrs.edu.br
 12. Lucas Marques de Matos - 02928020055
+13. Teste
 13. Nyckolas cardoso da rosa - 03855940037@senacrs.edu.br
-<<<<<<< HEAD
-
-
-
-
-
-
 
