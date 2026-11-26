@@ -11,3 +11,4 @@
 9. Izadora Medeiros - 03155117028
 10. Ygor Pereira Braga - 05557580018@senacrs.edu.br
 11. Enzo - 86257218004@senacrs.edu.br
+12. Lucas Marques de Matos - 02928020055
