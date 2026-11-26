@@ -1,0 +1,10 @@
+1 - git clone do repositório tiago-commit/senacversionamento
+2 - alterar o o conteúdo do arquivo turma.md (não alterar o nome do arquivo--> so conteúdo)
+3 - devolver o arquivo (push) para a mesma brach 
+
+obs: você poderá ter que
+_ resolver conflitos
+
+objetivo do exercício 
+-- entender e analisar como funciona um commit em que todas estão alterando o mesmo arquivo
+ 
