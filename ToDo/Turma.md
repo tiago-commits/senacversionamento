@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 1 - Yan Speggiorin Pagnossin Alves - 000040443
 4 - david silveira - 182610002
 3 - Marcio da Silva Louzada - Matricula 182610037
@@ -35,5 +35,9 @@ Marcio da Silva Louzada - Matricula 182610037
 3 - Natan Mikael Dos Santos Espindola - 182610052
 4 - david silveira - 182610002
 5 - Marcio da Silva Louzada - Matricula 182610037
+100- Izadora Medeiros - 03155117028
+
+
 
 6 - Ygor Pereira Braga - 05557580018@senacrs.edu.br
+7- Enzo - 86257218004@senacrs.edu.br
