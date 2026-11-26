@@ -59,3 +59,5 @@ Marcio da Silva Louzada - Matricula 182610037
 
 
 
+
+Nyckolas cardoso da rosa - 03855940037@senacrs.edu.br
