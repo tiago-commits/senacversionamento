@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 1 - Yan Speggiorin Pagnossin Alves - 000040443
 4 - david silveira - 182610002
 3 - Marcio da Silva Louzada - Matricula 182610037
@@ -38,7 +39,7 @@ Marcio da Silva Louzada - Matricula 182610037
 5 - Marcio da Silva Louzada - Matricula 182610037
 
 6 - Ygor Pereira Braga - 05557580018@senacrs.edu.br
-=======
+
 # Lista de alunos da turma
 
 1. Yan Speggiorin Pagnossin Alves - 000040443
@@ -53,4 +54,8 @@ Marcio da Silva Louzada - Matricula 182610037
 10. Ygor Pereira Braga - 05557580018@senacrs.edu.br
 11. Enzo - 86257218004@senacrs.edu.br
 12. Lucas Marques de Matos - 02928020055
->>>>>>> 84123d35c54629cf16efdf2f3f81121d3ebfcec7
+<<<<<<< HEAD
+
+
+
+
