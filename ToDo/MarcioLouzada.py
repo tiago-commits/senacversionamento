@@ -11,7 +11,7 @@ class Pessoa:
         print(f"Idade: {self.idade} anos")
         print(f"Sexo: {self.sexo}")
         print(f"Altura: {self.altura:.2f} m")
-        print("-" * 30)
+        print("\n#############################\n")
 
 
 ###########  OBJETOS   #############
