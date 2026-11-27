@@ -1,0 +1,109 @@
+https://github.com/tiago-commits/senacversionamento/invitations
+
+https://stackoverflow.com/questions/27828404/why-does-git-status-show-branch-is-up-to-date-when-changes-exist-upstream
+Your branch is up to date with 'origin/main'.
+
+https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit
+
+
+https://www.google.com/search?q=exercicios+de+git&rlz=1C1GCEU_pt-BRBR1240BR1240&oq=exercicios+de+git&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMgcIAxAAGO8FMgcIBBAAGO8F0gEIMjkxMmowajeoAgCwAgA&sourceid=chrome&source=chrome.ob&ie=UTF-8
+
+
+I have faced a similar problem, I searched everywhere online for solutions and I tried to follow them. None worked for me. These were the steps I took to the problem.
+
+Make new repo and push the existing code again to the new repo
+
+-----------------------------------------------------------------------------------
+$ git checkout branch1 # ensure in branch1 is checked out and active
+$ git checkout branch2 file.py
+
+$ git commit -m "Merge do arquivo.ext da branch origem"
+$ git push
+
+---------------------------------------------------------------------------------------------
+comando git para listar arquivos do ultimo commit
+git show --name-only HEAD
+
+
+---------------------------------------------------------------------------------------------
+
+git clean -df
+git clean -xdf CAUTION! This will also delete ignored files
+
+---------------------------------------------------------------------------------------------
+
+git init doesn’t initialize if you already have a .git/ folder in your repository. So, for your case, do -
+
+(1) rm -rf .git/
+
+(2) git init
+
+(3) git remote add origin https://repository.remote.url
+
+(4) git commit -m “Commit message”
+
+(5) git push -f origin master
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+If you want to check if there are new commits in remote branch that are not present on local branch, you should run:
+
+ git remote -v show origin
+If below msg exists then it means there are commits available to pull:
+
+ master pushes to master (local out of date)
+Refer: https://www.cs.swarthmore.edu/~adanner/cs31/resources/git-status.php#:~:text=This%20is%20the%20ideal%20git,the%20file%20has%20been%20committed
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+1
+
+Let look into a sample git repo to verify if your branch (master) is up to date with origin/master.
+
+Verify that local master is tracking origin/master:
+
+$ git branch -vv
+* master a357df1eb [origin/master] This is a commit message
+More info about local master branch:
+
+$ git show --summary
+commit a357df1eb941beb5cac3601153f063dae7faf5a8 (HEAD -> master, tag: 2.8.0, origin/master, origin/HEAD)
+Author: ...
+Date:   Tue Dec 11 14:25:52 2018 +0100
+
+    Another commit message
+Verify if origin/master is on the same commit:
+
+$ cat .git/packed-refs | grep origin/master
+a357df1eb941beb5cac3601153f063dae7faf5a8 refs/remotes/origin/master
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+"origin/master" refers to the reference poiting to the HEAD commit of branch "origin/master". A reference is a human-friendly alias name to a Git object, typically a commit object. "origin/master" reference only gets updated when you git push to your remote (http://git-scm.com/book/en/v2/Git-Internals-Git-References#Remotes).
+
+From within the root of your project, run:
+
+cat .git/refs/remotes/origin/master
+Compare the displayed commit ID with:
+
+cat .git/refs/heads/master
+They should be the same, and that's why Git says master is up-to-date with origin/master.
+
+When you run
+
+git fetch origin master
+That retrieves new Git objects locally under .git/objects folder. And Git updates .git/FETCH_HEAD so that now, it points to the latest commit of the fetched branch.
+
+So to see the differences between your current local branch, and the branch fetched from upstream, you can run
+
+git diff HEAD FETCH_HEAD
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+$ git checkout branch1 # ensure in branch1 is checked out and active
+$ git checkout branch2 file.py
+
+$ git commit -m "Merge do arquivo.ext da branch origem"
+$ git push

@@ -1,0 +1,43 @@
+ERROR: 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aaa.txt
+SOLUCAO
+
+Remova o arquivo apenas do rastreamento do Git (não apaga do seu computador):bash
+git rm --cached AAA.txt
+Use o código com cuidado.
+-----------------------------------------------------------------------------------------------------------------------
+ERROR: 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        material de aula/httpswww.google.comsearchq=como+log.txt
+SOLUCAO
+rm  material de aula/httpswww.google.comsearchq=como+log.txt
+
+
+3. Se você quer manter o arquivo no seu PC, mas não quer enviá-lo para o Git
+
+Você pode pedir para o Git ignorá-lo adicionando o caminho dele no seu arquivo .gitignore:
+bash
+echo "material de aula/httpswww.google.comsearchq=como+log.txt" >> .gitignore
+----------------------------------------------------------------------------------------------------------------------
+ERROR
+
+$ git push
+To https://github.com/tiago-commits/senacversionamento.git
+ ! [rejected]        snk -> snk (fetch first)
+error: failed to push some refs to 'https://github.com/tiago-commits/senacversionamento.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SOLUCAO
+git pull
+git push
+----------------------------------------------------------------------------------------------------------------------
+
+
